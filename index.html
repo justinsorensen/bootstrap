@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>CSE594 by justinsorensen</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/ui-lightness/jquery-ui.css" /> 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<script type="text/javascript"> alert("Welcome to my CSE 594 page.") 
+	</script>
+	
+	<script>
+  		$(document).ready(function() {
+  		
+  		var effects = Array("blind","slide","explode","clip","fade","fold","shake","pulsate");
+    
+		$("#clicker").click(function () {
+		
+				var effect = effects[Math.floor(Math.random()*effects.length)];
+     			$(this).hide(effect, 1000);
+     		 	$(this).show(effect, 1);
+     		 	
+			}); 
+
+  		});		
+
+	</script>
+	
+	<style>
+		.box{
+				border: 1px black;
+				border-style: solid;
+				border-radius: 10px;
+			}
+	</style>
+	
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>CSE594</h1>
+		<p id="clicker"><strong>Try clicking this text and see what happens!</strong></p>
+        <p id="clicker">TestRepo</p>
+
+        <p class="view"><a href="https://github.com/justinsorensen/Testing">View the Project on GitHub <small>justinsorensen/Testing</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/justinsorensen/Testing/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/justinsorensen/Testing/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/justinsorensen/Testing">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+	  
+	  
+        <h3>Automatically generated page for me to modify and test within.</h3>
+
+			<pre><code>$ cd your_repo_root/repo_name
+			$ git fetch origin
+			$ git checkout gh-pages
+			</code></pre>
+
+
+				<h3>Pages</h3>
+					<div class="box">
+						<ul>
+							<li><a href="http://justinsorensen.github.com/Testing/testing.html">Hello World </a>
+							
+							<li><a href="http://justinsorensen.github.com/Testing/bootstraptest.html">Bootstrap Testing </a>
+						</ul>
+					</div>
+	
+	
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/justinsorensen">justinsorensen</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
